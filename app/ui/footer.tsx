@@ -16,7 +16,7 @@ export default function Footer() {
       style={{ backgroundImage: `url('${haidaHouseAtTllaal.src}')` }}
     >
       <div className="absolute bg-white/95 h-full left-0 top-0 w-full z-10"></div>
-      <div className="2xl:px-0 flex flex-col gap-8 lg:px-8 max-w-[1320px] md:px-4 mx-auto px-4 py-16 relative z-20">
+      <div className="2xl:px-0 flex flex-col gap-16 lg:px-8 max-w-[1320px] md:px-4 mx-auto px-4 py-16 relative z-20">
         <div className="flex flex-col gap-2 md:w-1/2 xl:w-1/3">
           <h2 className={`${bodoniModa.className} text-[#ed1b24] text-2xl`}>
             Land Acknowledgement
@@ -34,7 +34,7 @@ export default function Footer() {
             across Canada.
           </p>
         </div>
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-0 md:items-start md:justify-between">
           <Link
             className={`${bodoniModa.className} flex gap-2 items-center text-xl`}
             href="/"

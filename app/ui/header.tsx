@@ -61,7 +61,11 @@ export default function Header() {
                 key={i}
               >
                 <Link
-                  className="block hover:text-[#ed1b24] md:p-0 px-4 py-4 transition"
+                  className={
+                    pathname === href
+                      ? "block md:p-0 px-4 py-4 transition"
+                      : "block hover:text-[#ed1b24] md:p-0 px-4 py-4 transition"
+                  }
                   href={href}
                 >
                   {text}

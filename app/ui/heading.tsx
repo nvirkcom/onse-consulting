@@ -15,7 +15,7 @@ export default function Heading({
 }>) {
   return (
     <h2
-      className={`${bodoniModa.className} flex gap-4 items-center justify-center text-[#ed1b24] text-3xl text-center uppercase`}
+      className={`${bodoniModa.className} flex gap-4 items-center justify-center sm:text-3xl text-[#ed1b24] text-2xl text-center uppercase`}
     >
       <Image alt="" className="h-10 w-auto" src={headingLeft} />
       {children}
