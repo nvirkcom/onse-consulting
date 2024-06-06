@@ -1,7 +1,12 @@
 import { Bodoni_Moda } from "next/font/google";
+import { Metadata } from "next";
 import Heading from "@/app/ui/heading";
 import Image from "next/image";
 import nicaragua from "@/app/assets/images/nicaragua.jpg";
+
+export const metadata: Metadata = {
+  title: "Impact",
+};
 
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],

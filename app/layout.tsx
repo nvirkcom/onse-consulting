@@ -10,7 +10,10 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "ONSE Consulting",
+  title: {
+    default: "ONSE Consulting",
+    template: "%s - ONSE Consulting",
+  },
   description: "ONSE Consulting",
 };
 

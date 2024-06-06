@@ -1,6 +1,11 @@
 import { Bodoni_Moda } from "next/font/google";
+import { Metadata } from "next";
 import Image from "next/image";
 import squamishLake from "@/app/assets/images/squamish-lake.jpg";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],

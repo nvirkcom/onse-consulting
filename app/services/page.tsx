@@ -1,4 +1,5 @@
 import { Bodoni_Moda } from "next/font/google";
+import { Metadata } from "next";
 import guate from "@/app/assets/images/guate.jpg";
 import Heading from "@/app/ui/heading";
 import Image from "next/image";
@@ -7,6 +8,10 @@ import mp from "@/app/assets/images/mp.jpg";
 import muralHazeltonsDowntown from "@/app/assets/images/mural-hazeltons-downtown.jpg";
 import muranHonoringOurWomen from "@/app/assets/images/muran-honoring-our-women.jpg";
 import ottawaRiver from "@/app/assets/images/ottawa-river.jpg";
+
+export const metadata: Metadata = {
+  title: "Services",
+};
 
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],

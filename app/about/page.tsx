@@ -1,9 +1,14 @@
 import { Bodoni_Moda } from "next/font/google";
+import { Metadata } from "next";
 import altin from "@/app/assets/images/atlin.jpg";
 import guate from "@/app/assets/images/guate.jpg";
 import Heading from "@/app/ui/heading";
 import Image from "next/image";
 import skedan from "@/app/assets/images/skedan.jpg";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],
