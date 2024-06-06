@@ -1,5 +1,6 @@
 "use client";
 
+import { Bodoni_Moda } from "next/font/google";
 import { CgMenuRight } from "react-icons/cg";
 import { TfiClose } from "react-icons/tfi";
 import { usePathname } from "next/navigation";
@@ -8,21 +9,30 @@ import Image from "next/image";
 import Link from "next/link";
 import onseConsultingLogo from "@/app/assets/logos/onse-consulting-logo.svg";
 
-export default function Header({
-  font,
-  navLinks,
-}: {
-  font: string;
-  navLinks: { href: string; text: string }[];
-}) {
+const bodoniModa = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
+  const navLinks = [
+    { href: "/", text: "Home" },
+    { href: "/about", text: "About" },
+    { href: "/contact", text: "Contact" },
+    { href: "/impact", text: "Impact" },
+    { href: "/services", text: "Services" },
+  ];
   const pathname = usePathname();
 
   return (
     <header className="bg-white border-b fixed left-0 shadow-sm top-0 w-full z-20">
       <div className="2xl:px-0 lg:px-8 max-w-[1320px] md:flex md:items-center md:justify-between md:px-4 mx-auto">
         <div className="flex h-20 justify-between md:p-0 px-4">
-          <Link className={`${font} flex gap-2 items-center text-xl`} href="/">
+          <Link
+            className={`${bodoniModa.className} flex gap-2 items-center text-xl`}
+            href="/"
+          >
             <Image
               alt="ONSE Consulting logo"
               height="40"
