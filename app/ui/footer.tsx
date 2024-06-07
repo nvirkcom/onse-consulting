@@ -43,16 +43,19 @@ export default function Footer() {
         )}
         <div className="flex flex-col gap-4 md:flex-row md:gap-0 md:items-start md:justify-between">
           <Link
-            className={`${bodoniModa.className} flex gap-2 items-center text-xl`}
+            className={`${bodoniModa.className} flex gap-2.5 items-center text-xl`}
             href="/"
           >
             <Image
               alt="ONSE Consulting logo"
-              height="40"
+              height="48"
               src={onseConsultingLogo}
-              width="40"
+              width="48"
             />
-            ONSE Consulting
+            <span className="flex flex-col relative top-[2px]">
+              <span className="right-[3px] relative text-[31px]">ONSE</span>
+              <span className="text-xs uppercase">Consulting</span>
+            </span>
           </Link>
 
           <div className="flex flex-col gap-1">

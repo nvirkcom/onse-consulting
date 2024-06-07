@@ -30,16 +30,19 @@ export default function Header() {
       <div className="2xl:px-0 lg:px-8 max-w-[1320px] md:flex md:items-center md:justify-between md:px-4 mx-auto">
         <div className="flex h-20 justify-between md:p-0 px-4">
           <Link
-            className={`${bodoniModa.className} flex gap-2 items-center text-xl`}
+            className={`${bodoniModa.className} flex gap-2.5 items-center text-xl`}
             href="/"
           >
             <Image
               alt="ONSE Consulting logo"
-              height="40"
+              height="48"
               src={onseConsultingLogo}
-              width="40"
+              width="48"
             />
-            ONSE Consulting
+            <span className="flex flex-col relative top-[2px]">
+              <span className="right-[3px] relative text-[31px]">ONSE</span>
+              <span className="text-xs uppercase">Consulting</span>
+            </span>
           </Link>
           <button className="md:hidden" onClick={() => setNavOpen(!navOpen)}>
             {navOpen ? (
