@@ -69,7 +69,6 @@ export default function Header() {
                   href={href}
                   onClick={() => {
                     setNavOpen(false);
-                    window.scrollTo(0, 0);
                   }}
                 >
                   {text}
