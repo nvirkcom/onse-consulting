@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="flex h-screen items-center justify-center relative">
       <Image
         alt=""
-        className="absolute h-full left-0 top-0 w-full z-0"
+        className="absolute h-full left-0 object-cover top-0 w-full z-0"
         src={railLake}
       />
       <div className="absolute bg-black h-full left-0 opacity-15 top-0 z-10 w-full"></div>
