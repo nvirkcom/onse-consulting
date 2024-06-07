@@ -19,8 +19,8 @@ export default function Services() {
     <section className="bg-gray-50 border-y">
       <div className="flex flex-col gap-16 max-w-[1320px] mx-auto px-4 py-16">
         <Heading>Services</Heading>
-        <div className="flex flex-col gap-8 lg:flex-row lg:flex-wrap lg:gap-y-16">
-          <div className="flex flex-col gap-4 lg:w-[calc(50%-16px)]">
+        <div className="flex flex-col gap-8 xl:flex-row lg:flex-wrap lg:gap-y-16">
+          <div className="flex flex-col gap-4 xl:w-[calc(50%-16px)]">
             <Figure
               caption={{
                 english: "Hazelton, British Columbia, Canada",
@@ -45,7 +45,7 @@ export default function Services() {
               communities.
             </p>
           </div>
-          <div className="flex flex-col gap-4 lg:w-[calc(50%-16px)]">
+          <div className="flex flex-col gap-4 xl:w-[calc(50%-16px)]">
             <Figure
               caption={{
                 english: "Bambang, Bulacan, Philippine",
@@ -68,7 +68,7 @@ export default function Services() {
               internationally.
             </p>
           </div>
-          <div className="flex flex-col gap-4 lg:w-[calc(50%-16px)]">
+          <div className="flex flex-col gap-4 xl:w-[calc(50%-16px)]">
             <Figure
               caption={{
                 english: "Whitehorse, Yukon, Canada",
@@ -93,7 +93,7 @@ export default function Services() {
               objectives; strategic advice; implementation; and evaluation.
             </p>
           </div>
-          <div className="flex flex-col gap-4 lg:w-[calc(50%-16px)]">
+          <div className="flex flex-col gap-4 xl:w-[calc(50%-16px)]">
             <Figure
               caption={{
                 english: "Vancouver, British Columbia, Canada",
@@ -118,7 +118,7 @@ export default function Services() {
               reconciliation.
             </p>
           </div>
-          <div className="flex flex-col gap-4 lg:w-[calc(50%-16px)]">
+          <div className="flex flex-col gap-4 xl:w-[calc(50%-16px)]">
             <Figure
               caption={{
                 english: "Ottawa, Ontario, Canada",

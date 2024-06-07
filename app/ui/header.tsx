@@ -49,7 +49,9 @@ export default function Header() {
             )}
           </button>
         </div>
-        <nav className={`${navOpen ? "" : "hidden"} md:flex`}>
+        <nav
+          className={`${navOpen ? "" : "hidden"} border-t md:border-0 md:flex`}
+        >
           <ul className="md:flex md:gap-8">
             {navLinks.map(({ href, text }, i) => (
               <li
