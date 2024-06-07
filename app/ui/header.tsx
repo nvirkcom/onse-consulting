@@ -67,6 +67,10 @@ export default function Header() {
                       : "block hover:text-[#ed1b24] md:p-0 px-4 py-4 transition"
                   }
                   href={href}
+                  onClick={() => {
+                    setNavOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   {text}
                 </Link>
