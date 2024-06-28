@@ -1,5 +1,6 @@
 import { Bodoni_Moda } from "next/font/google";
 import altin from "@/app/assets/images/atlin.jpg";
+import Button from "@/app/ui/button";
 import Figure from "@/app/ui/figure";
 import Heading from "@/app/ui/heading";
 import Image from "next/image";
@@ -14,8 +15,9 @@ export default function About() {
   return (
     <section className="flex flex-col gap-16 max-w-[1320px] mx-auto px-4 py-16">
       <Heading>About</Heading>
-      <div className="flex flex-col gap-8 lg:flex-row lg:items-center">
-        <div className="lg:w-[calc(50%-16px)]">
+
+      <div className="flex flex-col gap-8 lg:flex-row">
+        <div className="flex flex-col gap-8 lg:items-center lg:w-[calc(50%-16px)]">
           <Figure
             caption={{
               english: "Atlin, British Columbia, Canada",
@@ -30,26 +32,22 @@ export default function About() {
               width={1920}
             />
           </Figure>
+          <div className="flex flex-col gap-2">
+            <h3 className={`${bodoniModa.className} text-[#ed1b24] text-2xl`}>
+              Our Focus
+            </h3>
+            <p>
+              ONSE and its Associates are committed to build and improve
+              relationships between Indigenous and non-Indigenous communities.
+              We acknowledge the unique status, treaty rights and diverse
+              governance systems of First Nations, Métis and Inuit peoples and
+              communities in Canada and will work in partnership with all levels
+              of government.
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-2 lg:w-[calc(50%-16px)]">
-          <h3 className={`${bodoniModa.className} text-[#ed1b24] text-2xl`}>
-            Our Focus
-          </h3>
-          <p>
-            ONSE and its Associates are committed to build and improve
-            relationships between Indigenous and non-Indigenous peoples,
-            communities, governments, businesses, organizations and
-            institutions. We focus on socio-economic initiatives, conservation
-            and environmental projects, community development, cultural
-            preservation and governance structures. Our work begins with
-            respectful engagement and honest collaboration to ensure successful
-            deliverables for all parties.
-          </p>
-        </div>
-      </div>
 
-      <div className="flex flex-col gap-8 lg:flex-row lg:items-center">
-        <div className="lg:order-2 lg:w-[calc(50%-16px)]">
+        <div className="flex flex-col gap-8 lg:items-center lg:w-[calc(50%-16px)]">
           <Figure
             caption={{
               english: "Skedans, Haida Gwaii, British Columbia, Canada",
@@ -64,25 +62,23 @@ export default function About() {
               width={1920}
             />
           </Figure>
-        </div>
-        <div className="flex flex-col gap-2 lg:order-1 lg:w-[calc(50%-16px)]">
-          <h3 className={`${bodoniModa.className} text-[#ed1b24] text-2xl`}>
-            Our Mission
-          </h3>
-          <p>
-            ONSE is versed in providing respectful engagement and collaboration
-            between Indigenous peoples and non-Indigenous communities,
-            organizations, businesses and institutions. ONSE’s Founder and
-            Associates have established strong relationships and trust with
-            Indigenous community members, organizations, leaders, Elders, youth,
-            artists, knowledge holders and wisdom keepers. ONSE’s team of
-            subject matter experts have partnered and delivered projects with
-            academic institutions, science-based research groups, conservation
-            and environmental groups, community developers, non-profit entities
-            and Indigenous organizations.
-          </p>
+          <div className="flex flex-col gap-2">
+            <h3 className={`${bodoniModa.className} text-[#ed1b24] text-2xl`}>
+              Our Mission
+            </h3>
+            <p>
+              ONSE is versed in providing respectful engagement and
+              collaboration between Indigenous peoples and non-Indigenous
+              communities, organizations, businesses and institutions. We aim to
+              provide strong due-diligence in ensuring our clients and partners
+              understand that providing a culturally rich and inclusive
+              environment can lead to successful partnerships and outcomes.
+            </p>
+          </div>
         </div>
       </div>
+
+      <Button href="/about">Read More</Button>
     </section>
   );
 }

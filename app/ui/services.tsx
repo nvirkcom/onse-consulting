@@ -1,6 +1,6 @@
 import { Bodoni_Moda } from "next/font/google";
+import Button from "@/app/ui/button";
 import Figure from "@/app/ui/figure";
-import guate from "@/app/assets/images/guate.jpg";
 import Heading from "@/app/ui/heading";
 import Image from "next/image";
 import kwanlinDunCulturalCentre from "@/app/assets/images/kwanlin-dun-cultural-centre.jpg";
@@ -19,6 +19,7 @@ export default function Services() {
     <section className="bg-gray-50 border-y">
       <div className="flex flex-col gap-16 max-w-[1320px] mx-auto px-4 py-16">
         <Heading>Services</Heading>
+
         <div className="flex flex-col gap-8 xl:flex-row lg:flex-wrap lg:gap-y-16">
           <div className="flex flex-col gap-4 xl:w-[calc(50%-16px)]">
             <Figure
@@ -142,6 +143,8 @@ export default function Services() {
             </p>
           </div>
         </div>
+
+        <Button href="/services">Read More</Button>
       </div>
     </section>
   );

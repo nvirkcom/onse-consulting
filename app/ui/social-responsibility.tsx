@@ -1,4 +1,5 @@
 import { Bodoni_Moda } from "next/font/google";
+import Button from "@/app/ui/button";
 import Figure from "@/app/ui/figure";
 import Heading from "@/app/ui/heading";
 import Image from "next/image";
@@ -38,6 +39,7 @@ export default function SocialResponsibility() {
           to engage and collaborate with less fortunate communities globally.
         </p>
       </div>
+      <Button href="/impact">Read More</Button>
     </section>
   );
 }
