@@ -40,7 +40,7 @@ export default function Impact() {
             by providing a minimum of 5% of each project’s budget to launch,
             complete and maintain new and on-going initiatives worldwide and
             dedicate time to engage and collaborate with less fortunate
-            communities globally. To learn more about Isa Mundo's on-going
+            communities globally. To learn more about Isa Mundo&apos;s on-going
             projects and its impact past and present in the global community,
             please visit{" "}
             <a
